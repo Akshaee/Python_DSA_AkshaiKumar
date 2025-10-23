@@ -1,20 +1,20 @@
-class linked_list:
+class NodeList:
     def __init__(self, data):
         self.data = data
         self.next = None
 
-linked_list1 = linked_list(3)
-linked_list2 = linked_list(15)
-linked_list3 = linked_list(4)
-linked_list4 = linked_list(2)
+NodeList1 = NodeList(3)
+NodeList2 = NodeList(15)
+NodeList3 = NodeList(4)
+NodeList4 = NodeList(2)
 
-linked_list1.next = linked_list2
-linked_list2.next = linked_list3
-linked_list3.next = linked_list4
+NodeList1.next = NodeList2
+NodeList2.next = NodeList3
+NodeList3.next = NodeList4
 
-current_linked_list = linked_list1
+current_NodeList = NodeList1
 
-while current_linked_list:
-  print(current_linked_list.data, end=" ")
-  current_linked_list = current_linked_list.next
-print("Null")
+while current_NodeList:
+  print(current_NodeList.data, end=" ")
+  current_NodeList = current_NodeList.next
+print("None")
